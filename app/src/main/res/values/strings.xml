@@ -4,8 +4,8 @@
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
@@ -22,4 +22,12 @@
     <string name="history_Text">History</string>
     <string name="submit_button">Submit</string>
     <string name="reminder_time_text">Reminder Time:</string>
+
+    <string name="username">Username</string>
+    <string name="registering">Registering</string>
+
+
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>
