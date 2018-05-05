@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FinalProject</string>
+    <string name="app_name">Home Brew Tracker</string>
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->
@@ -15,6 +15,11 @@
         completions."
     </string>
 
+
+    <string name="username">Username</string>
+    <string name="registering">Registering</string>
+
+    <!-- Global strings -->
     <string name="form_Select_Button">Select</string>
     <string name="form_One_Text">Form One</string>
     <string name="form_Two_Text">Form Two</string>
@@ -22,9 +27,19 @@
     <string name="history_Text">History</string>
     <string name="submit_button">Submit</string>
     <string name="reminder_time_text">Reminder Time:</string>
+    <string name="back">Back</string>
 
-    <string name="username">Username</string>
-    <string name="registering">Registering</string>
+    <!-- Strings related to both forms -->
+    <string name="date">Date: </string>
+    <string name="specific_gravity">SG: </string>
+    <string name="temperature">Degrees F:</string>
+    <string name="batch">Batch #: </string>
+
+    <!-- Strings related to form one -->
+    <string name="mead">Mead Form</string>
+
+    <!-- Strings related to form two -->
+    <string name="wine">Wine Form</string>
 
 
     <item name="visible" type="id" />

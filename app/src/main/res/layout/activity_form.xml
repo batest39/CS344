@@ -8,7 +8,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/formOneWrapper"
-        android:layout_width="368dp"
+        android:layout_width="398dp"
         android:layout_height="495dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -40,13 +40,13 @@
 
         <TextView
             android:id="@+id/formTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="336dp"
+            android:layout_height="46dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="Title"
+            android:text="@string/mead"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             app:layout_constraintBottom_toBottomOf="@+id/formOneTextWrapper"
             app:layout_constraintEnd_toEndOf="@+id/formOneTextWrapper"
@@ -58,60 +58,68 @@
         <EditText
             android:id="@+id/fieldOne"
             android:layout_width="100dp"
-            android:layout_height="30dp"
+            android:layout_height="45dp"
             android:layout_marginEnd="52dp"
+            android:layout_marginRight="52dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="92dp"
+            android:layout_marginTop="108dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="date"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.846"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.748"
+            app:layout_constraintStart_toEndOf="@+id/fieldOneText"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/FieldOneText"
+            android:id="@+id/fieldOneText"
             android:layout_width="51dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="100dp"
-            android:text="Field 1"
+            android:layout_marginTop="124dp"
+            android:text="@string/date"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/formFieldTwoText"
+            android:id="@+id/fieldTwoText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="30dp"
-            android:text="Field 2"
+            android:layout_marginTop="40dp"
+            android:text="@string/specific_gravity"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/FieldOneText" />
+            app:layout_constraintTop_toBottomOf="@+id/fieldOneText" />
 
         <EditText
             android:id="@+id/fieldTwo"
             android:layout_width="100dp"
-            android:layout_height="30dp"
+            android:layout_height="45dp"
             android:layout_marginEnd="84dp"
+            android:layout_marginRight="84dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberDecimal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/formFieldTwoText"
+            app:layout_constraintStart_toEndOf="@+id/fieldTwoText"
             app:layout_constraintTop_toBottomOf="@+id/fieldOne" />
 
         <EditText
             android:id="@+id/fieldThree"
             android:layout_width="100dp"
-            android:layout_height="30dp"
+            android:layout_height="45dp"
             android:layout_marginEnd="84dp"
+            android:layout_marginRight="84dp"
             android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="16dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/fieldThreeText"
@@ -121,47 +129,70 @@
             android:id="@+id/fieldThreeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="30dp"
-            android:text="Field 3"
+            android:layout_marginTop="40dp"
+            android:text="@string/temperature"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/formFieldTwoText" />
+            app:layout_constraintTop_toBottomOf="@+id/fieldTwoText" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/fieldFourText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="30dp"
-            android:text="Field 4"
+            android:layout_marginTop="40dp"
+            android:text="@string/batch"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/fieldThreeText" />
 
         <EditText
             android:id="@+id/fieldFour"
             android:layout_width="100dp"
-            android:layout_height="30dp"
+            android:layout_height="45dp"
             android:layout_marginEnd="84dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginRight="84dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/fieldFourText"
             app:layout_constraintTop_toBottomOf="@+id/fieldThree" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/submit_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="@string/submit_button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.666"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.632"
+            app:layout_constraintStart_toEndOf="@+id/form_back_button"
             app:layout_constraintTop_toBottomOf="@+id/fieldFour"
-            app:layout_constraintVertical_bias="0.662" />
+            app:layout_constraintVertical_bias="0.736" />
+
+        <Button
+            android:id="@+id/form_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="96dp"
+            android:text="@string/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fieldFourText"
+            app:layout_constraintVertical_bias="0.0" />
+
     </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>
