@@ -11,17 +11,17 @@ import android.widget.TextView;
 
 public class FormTwoActivity extends AppCompatActivity {
 
-    private Context context;
+/*    private Context context;
     private Button backButton;
     private Button submitButton;
     private EditText dateField, sgField, degreesField, batchField;
-    private TextView title;
+    private TextView title;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        backButton = findViewById(R.id.form_back_button);
+/*        backButton = findViewById(R.id.form_back_button);
         submitButton = findViewById(R.id.submit_button);
         dateField = findViewById(R.id.fieldOne);
         sgField = findViewById(R.id.fieldTwo);
@@ -30,7 +30,7 @@ public class FormTwoActivity extends AppCompatActivity {
         title = findViewById(R.id.formTitle);
         title.setText(R.string.wine);
 
-        getButtonListener(backButton, submitButton);
+        getButtonListener(backButton, submitButton);*/
 
 /*            fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +41,7 @@ public class FormTwoActivity extends AppCompatActivity {
         });*/
     }
 
-    public void getButtonListener(Button inBackButton, Button inSubmitButton) {
+/*    public void getButtonListener(Button inBackButton, Button inSubmitButton) {
         final Button backButton = inBackButton;
         final Button submitButton = inSubmitButton;
 
@@ -58,5 +58,5 @@ public class FormTwoActivity extends AppCompatActivity {
         });
 
 
-    }
+    }*/
 }

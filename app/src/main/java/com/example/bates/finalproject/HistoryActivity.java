@@ -12,6 +12,7 @@ public class HistoryActivity extends AppCompatActivity {
 
     private Context context;
     private Button backButton;
+    private String usernameString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,8 @@ public class HistoryActivity extends AppCompatActivity {
             setContentView(R.layout.activity_history_landscape);
         }
 
+        Bundle bundle = getIntent().getExtras();
+        usernameString = bundle.getString("username");
 
         backButton = findViewById(R.id.history_back_button);
         getButtonListener(backButton);
@@ -46,6 +49,9 @@ public class HistoryActivity extends AppCompatActivity {
                 if (view.getId() == backButton.getId()) {
                     context = getApplicationContext();
                     Intent intent = new Intent(context, MainActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("username", usernameString);
+                    intent.putExtras(bundle);
                     startActivity(intent);
                 }
             }

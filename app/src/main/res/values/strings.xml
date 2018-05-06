@@ -21,8 +21,8 @@
 
     <!-- Global strings -->
     <string name="form_Select_Button">Select</string>
-    <string name="form_One_Text">Form One</string>
-    <string name="form_Two_Text">Form Two</string>
+    <string name="form_One_Text">Mead</string>
+    <string name="form_Two_Text">Wine</string>
     <string name="settings_Text">Settings</string>
     <string name="history_Text">History</string>
     <string name="submit_button">Submit</string>

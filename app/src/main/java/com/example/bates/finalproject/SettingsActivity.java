@@ -11,6 +11,7 @@ public class SettingsActivity  extends AppCompatActivity {
 
     private Context context;
     private Button backButton;
+    private String usernameString;
 
 
     @Override
@@ -19,6 +20,8 @@ public class SettingsActivity  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
+        Bundle bundle = getIntent().getExtras();
+        usernameString = bundle.getString("username");
         backButton = findViewById(R.id.settings_back_button);
 
 /*            fab.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +43,9 @@ public class SettingsActivity  extends AppCompatActivity {
                 if (view.getId() == backButton.getId()) {
                     context = getApplicationContext();
                     Intent intent = new Intent(context, MainActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("username", usernameString);
+                    intent.putExtras(bundle);
                     startActivity(intent);
                 }
             }

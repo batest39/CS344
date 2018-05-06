@@ -15,12 +15,16 @@ public class MainActivity extends AppCompatActivity {
     private Button settingsButton;
     private Button historyButton;
     private Context context;
+    private String usernameString;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Bundle bundle = getIntent().getExtras();
+        usernameString = bundle.getString("username");
 
         form1Button = findViewById(R.id.formOneButton);
         form2Button = findViewById(R.id.formTwoButton);
@@ -45,7 +49,12 @@ public class MainActivity extends AppCompatActivity {
                 //logging in
                 if (view.getId() == form1Button.getId()) {
                     context = getApplicationContext();
+
+                    Bundle bundle = new Bundle();
+                    bundle.putString("stringArr", usernameString + ",false");
                     Intent intent = new Intent(context, FormOneActivity.class);
+
+                    intent.putExtras(bundle);
                     startActivity(intent);
                 }
             }
@@ -57,7 +66,10 @@ public class MainActivity extends AppCompatActivity {
                 //logging in
                 if (view.getId() == form2Button.getId()) {
                     context = getApplicationContext();
-                    Intent intent = new Intent(context, FormTwoActivity.class);
+                    Intent intent = new Intent(context, FormOneActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("stringArr", usernameString + ",true");
+                    intent.putExtras(bundle);
                     startActivity(intent);
                 }
             }
@@ -70,6 +82,9 @@ public class MainActivity extends AppCompatActivity {
                 if (view.getId() == settingsButton.getId()) {
                     context = getApplicationContext();
                     Intent intent = new Intent(context, SettingsActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("username", usernameString);
+                    intent.putExtras(bundle);
                     startActivity(intent);
                 }
             }
@@ -82,6 +97,9 @@ public class MainActivity extends AppCompatActivity {
                 if (view.getId() == historyButton.getId()) {
                     context = getApplicationContext();
                     Intent intent = new Intent(context, HistoryActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("username", usernameString);
+                    intent.putExtras(bundle);
                     startActivity(intent);
                 }
             }
