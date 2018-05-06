@@ -26,6 +26,7 @@
     <string name="settings_Text">Settings</string>
     <string name="history_Text">History</string>
     <string name="submit_button">Submit</string>
+    <string name="reminder_date_text">Reminder Date:</string>
     <string name="reminder_time_text">Reminder Time:</string>
     <string name="back">Back</string>
 
